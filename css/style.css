@@ -1,9 +1,19 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Open+sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
 body {
   font-family: "Open-Sans", sans-serif;
 }
+.banner-wrap {
+  background-image: url(./assets/bgimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
 h1 {
-    font-size: 36px;
-  }
-
+  font-size: 3rem;
+  color: white;
+}
