@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://e5f0f.csb.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script crossorigin="" type="text/javascript" src="./vendors_app_embed_sandbox_sandbox-startup.bcc15d438.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./vendors_app_embed_sandbox-startup.6e3433fd3.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./sandbox-startup.fbd015eab.js"></script><link href="https://codesandbox.io/static/js/babel.7.12.12.min.js" rel="prefetch" as="script">
+
+<script src="./browserfs.min.js" type="text/javascript"></script>
+
+<script>
+  window.process = BrowserFS.BFSRequire('process');
+  window.Buffer = BrowserFS.BFSRequire('buffer').Buffer;
+</script>
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Kenya - Watch TV</title>
+    <link rel="icon" href="https://e5f0f.csb.app/assets/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="manifest" href="https://e5f0f.csb.app/manifest.json">
+  <style id="/style.css:-css" type="text/css">@import url("https://fonts.googleapis.com/css2?family=Open+sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 16px;
+}
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+.banner-wrap {
+  background-image: url(./assets/bgimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 3.2rem;
+  color: white;
+}
+.navbar {
+  height: 20%;
+}
+.navbar img {
+  height: 32px;
+}
+.banner-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx3SUFBd0k7QUFDeEk7RUFDRSxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLGVBQWU7QUFDakI7QUFDQTtFQUNFLG9DQUFvQztBQUN0QztBQUNBO0VBQ0UsMkNBQTJDO0VBQzNDLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLGFBQWE7QUFDZjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsV0FBVztBQUNiIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1PcGVuK3NhbnM6aXRhbCx3Z2h0QDAsMzAwOzAsNDAwOzAsNjAwOzAsNzAwOzEsMzAwOzEsNDAwOzEsNjAwOzEsNzAwJmRpc3BsYXk9c3dhcFwiKTtcclxuKiB7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBtYXJnaW46IDBweDtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbn1cclxuYm9keSB7XHJcbiAgZm9udC1mYW1pbHk6IFwiT3Blbi1TYW5zXCIsIHNhbnMtc2VyaWY7XHJcbn1cclxuLmJhbm5lci13cmFwIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9hc3NldHMvYmdpbWFnZS5qcGcpO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgaGVpZ2h0OiAxMDB2aDtcclxufVxyXG5oMSB7XHJcbiAgZm9udC1zaXplOiAzLjJyZW07XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcbi5uYXZiYXIge1xyXG4gIGhlaWdodDogMjAlO1xyXG59XHJcbi5uYXZiYXIgaW1nIHtcclxuICBoZWlnaHQ6IDMycHg7XHJcbn1cclxuLmJhbm5lci1jb250YWluZXIge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBoZWlnaHQ6IDgwJTtcclxufVxyXG4iXX0= */</style><style id="/responsive.css:-css" type="text/css">a {
+  color: purple;
+}
+</style><script charset="utf-8" src="./0.84205e20b.chunk.js"></script><script charset="utf-8" src="./3.c68bd71c0.chunk.js"></script><script charset="utf-8" src="./7.cdfc7986d.chunk.js"></script></head>
+
+  <body>
+    <div class="banner-wrap">
+      <!-- Navbar -->
+      <div class="navbar">
+        <img src="./logo.png" alt="Netflix Cover">
+        <a href="https://www.netflix.com/ke-en/login" target="_blank">Sign In</a>
+        <a href="https://e5f0f.csb.app/contact-us/contact-us.html">Contact us</a>
+      </div>
+      <div class="banner-container">
+        <h1>Unlimited movies, TV shows, and more.</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+
+        <!-- Get started from-->
+        <form class="get-started-form">
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+          <input type="text">
+          <button>GET STARTED&gt;</button>
+        </form>
+      </div>
+    </div>
+    <div class="info-container">
+      <h1>Enjoy on your TV.</h1>
+      <p class="sm-font">
+        Watch on Smart TVs, <strong>Playstation</strong>, Xbox, Chromecast,
+        Apple TV, Blu-ray players, and more.
+      </p>
+      <!-- Inline video-->
+      <video autoplay="" playsinline="" muted="" loop="">
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+      </video>
+    </div>
+    <!-- This is the footer -->
+    <div class="footer">
+      <ul>
+        <li>FAQ</li>
+        <li>Help Center</li>
+        <li>Account</li>
+        <li>Media Center</li>
+        <li>Investor Relations</li>
+        <li>Jobs</li>
+        <li>Ways to Watch</li>
+        <li>Terms of Use</li>
+        <li>Privacy</li>
+        <li>Cookie Preferences</li>
+        <li>Corporate Information</li>
+        <li>Contact Us</li>
+        <li>Speed Test</li>
+        <li>Legal Notices</li>
+        <li>Netflix Originals</li>
+      </ul>
+    </div>
+    <script crossorigin="" type="text/javascript" src="./vendors_app_codemirror-editor_monaco-editor_sandbox.5ca13c344.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./common-sandbox.2744d008e.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./vendors_app_sandbox.49a2d4732.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./vendors_sandbox.aefe8771e.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./default_app_embed_sandbox.f645c0dc8.chunk.js"></script>
+    <script crossorigin="" type="text/javascript" src="./sandbox.c3f845a33.js"></script>
+    <script crossorigin="" type="text/javascript" src="./banner.be879265d.js"></script>
+  <script>
+window.__SANDBOX_DATA__ = {
+  data: {"transpiledModules":{"/assets/favicon.png:":{"query":"","module":{"path":"/assets/favicon.png","code":"https://uploads.codesandbox.io/uploads/user/8036c587-6c4e-41c7-9908-1ccb30624c29/29R1-favicon.png","isBinary":true},"isEntry":true,"isTestFile":false,"sourceEqualsCompiled":false,"childModules":[],"dependencies":[],"initiators":["/index.html:"],"transpilationDependencies":[],"transpilationInitiators":[],"asyncDependencies":[],"warnings":[],"hasMissingDependencies":false,"source":{"fileName":"/assets/favicon.png","compiledCode":"\n      module.exports = \"https://uploads.codesandbox.io/uploads/user/8036c587-6c4e-41c7-9908-1ccb30624c29/29R1-favicon.png\";","sourceEqualsCompiled":false}},"/assets/logo.png:":{"query":"","module":{"path":"/assets/logo.png","code":"https://uploads.codesandbox.io/uploads/user/8036c587-6c4e-41c7-9908-1ccb30624c29/GXWy-logo.png","isBinary":true},"isEntry":true,"isTestFile":false,"sourceEqualsCompiled":false,"childModules":[],"dependencies":[],"initiators":["/index.html:"],"transpilationDependencies":[],"transpilationInitiators":[],"asyncDependencies":[],"warnings":[],"hasMissingDependencies":false,"source":{"fileName":"/assets/logo.png","compiledCode":"\n      module.exports = \"https://uploads.codesandbox.io/uploads/user/8036c587-6c4e-41c7-9908-1ccb30624c29/GXWy-logo.png\";","sourceEqualsCompiled":false}},"/responsive.css:":{"query":"","module":{"path":"/responsive.css","code":"a {\r\n  color: purple;\r\n}\r\n","isBinary":false},"isEntry":true,"isTestFile":false,"sourceEqualsCompiled":false,"childModules":[],"dependencies":[],"initiators":["/index.html:"],"transpilationDependencies":[],"transpilationInitiators":[],"asyncDependencies":[],"warnings":[],"hasMissingDependencies":false,"source":{"fileName":"/responsive.css","compiledCode":"\nfunction createStyleNode(id, content) {\n  var styleNode =\n    document.getElementById(id) || document.createElement('style');\n\n  styleNode.setAttribute('id', id);\n  styleNode.type = 'text/css';\n  if (styleNode.styleSheet) {\n    styleNode.styleSheet.cssText = content;\n  } else {\n    styleNode.innerHTML = '';\n    styleNode.appendChild(document.createTextNode(content));\n  }\n  document.head.appendChild(styleNode);\n}\n\ncreateStyleNode(\n  \"/responsive.css:-css\",\n  \"a {\\r\\n  color: purple;\\r\\n}\\r\\n\"\n);\n\n\n","sourceEqualsCompiled":false}},"/style.css:":{"query":"","module":{"path":"/style.css","code":"@import url(\"https://fonts.googleapis.com/css2?family=Open+sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap\");\r\n* {\r\n  box-sizing: border-box;\r\n  margin: 0px;\r\n  font-size: 16px;\r\n}\r\nbody {\r\n  font-family: \"Open-Sans\", sans-serif;\r\n}\r\n.banner-wrap {\r\n  background-image: url(./assets/bgimage.jpg);\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  height: 100vh;\r\n}\r\nh1 {\r\n  font-size: 3.2rem;\r\n  color: white;\r\n}\r\n.navbar {\r\n  height: 20%;\r\n}\r\n.navbar img {\r\n  height: 32px;\r\n}\r\n.banner-container {\r\n  color: white;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  height: 80%;\r\n}\r\n","isBinary":false},"isEntry":true,"isTestFile":false,"sourceEqualsCompiled":false,"childModules":[],"dependencies":[],"initiators":["/index.html:"],"transpilationDependencies":[],"transpilationInitiators":[],"asyncDependencies":[],"warnings":[],"hasMissingDependencies":false,"source":{"fileName":"/style.css","compiledCode":"\nfunction createStyleNode(id, content) {\n  var styleNode =\n    document.getElementById(id) || document.createElement('style');\n\n  styleNode.setAttribute('id', id);\n  styleNode.type = 'text/css';\n  if (styleNode.styleSheet) {\n    styleNode.styleSheet.cssText = content;\n  } else {\n    styleNode.innerHTML = '';\n    styleNode.appendChild(document.createTextNode(content));\n  }\n  document.head.appendChild(styleNode);\n}\n\ncreateStyleNode(\n  \"/style.css:-css\",\n  \"@import url(\\\"https://fonts.googleapis.com/css2?family=Open+sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap\\\");\\r\\n* {\\r\\n  box-sizing: border-box;\\r\\n  margin: 0px;\\r\\n  font-size: 16px;\\r\\n}\\r\\nbody {\\r\\n  font-family: \\\"Open-Sans\\\", sans-serif;\\r\\n}\\r\\n.banner-wrap {\\r\\n  background-image: url(./assets/bgimage.jpg);\\r\\n  background-size: cover;\\r\\n  background-repeat: no-repeat;\\r\\n  background-position: center;\\r\\n  height: 100vh;\\r\\n}\\r\\nh1 {\\r\\n  font-size: 3.2rem;\\r\\n  color: white;\\r\\n}\\r\\n.navbar {\\r\\n  height: 20%;\\r\\n}\\r\\n.navbar img {\\r\\n  height: 32px;\\r\\n}\\r\\n.banner-container {\\r\\n  color: white;\\r\\n  display: flex;\\r\\n  flex-direction: column;\\r\\n  align-items: center;\\r\\n  justify-content: center;\\r\\n  height: 80%;\\r\\n}\\r\\n\\r\\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx3SUFBd0k7QUFDeEk7RUFDRSxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLGVBQWU7QUFDakI7QUFDQTtFQUNFLG9DQUFvQztBQUN0QztBQUNBO0VBQ0UsMkNBQTJDO0VBQzNDLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsMkJBQTJCO0VBQzNCLGFBQWE7QUFDZjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFlBQVk7RUFDWixhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsV0FBVztBQUNiIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1PcGVuK3NhbnM6aXRhbCx3Z2h0QDAsMzAwOzAsNDAwOzAsNjAwOzAsNzAwOzEsMzAwOzEsNDAwOzEsNjAwOzEsNzAwJmRpc3BsYXk9c3dhcFwiKTtcclxuKiB7XHJcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICBtYXJnaW46IDBweDtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbn1cclxuYm9keSB7XHJcbiAgZm9udC1mYW1pbHk6IFwiT3Blbi1TYW5zXCIsIHNhbnMtc2VyaWY7XHJcbn1cclxuLmJhbm5lci13cmFwIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9hc3NldHMvYmdpbWFnZS5qcGcpO1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcclxuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgaGVpZ2h0OiAxMDB2aDtcclxufVxyXG5oMSB7XHJcbiAgZm9udC1zaXplOiAzLjJyZW07XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcbi5uYXZiYXIge1xyXG4gIGhlaWdodDogMjAlO1xyXG59XHJcbi5uYXZiYXIgaW1nIHtcclxuICBoZWlnaHQ6IDMycHg7XHJcbn1cclxuLmJhbm5lci1jb250YWluZXIge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBoZWlnaHQ6IDgwJTtcclxufVxyXG4iXX0= */\"\n);\n\n\n","sourceEqualsCompiled":false}},"/index.html:":{"query":"","module":{"path":"/index.html","code":"\u003c!DOCTYPE html>\n\u003chtml lang=\"en\">\n  \u003chead>\n    \u003cmeta charset=\"UTF-8\" />\n    \u003cmeta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \u003ctitle>Netflix Kenya - Watch TV\u003c/title>\n    \u003clink rel=\"icon\" href=\"assets/favicon.png\" />\n    \u003clink rel=\"stylesheet\" href=\"style.css\" />\n    \u003clink rel=\"stylesheet\" href=\"responsive.css\" />\n  \u003c/head>\n\n  \u003cbody>\n    \u003cdiv class=\"banner-wrap\">\n      \u003c!-- Navbar -->\n      \u003cdiv class=\"navbar\">\n        \u003cimg src=\"assets/logo.png\" alt=\"Netflix Cover\" />\n        \u003ca href=\"https://www.netflix.com/ke-en/login\" target=\"_blank\"\n          >Sign In\u003c/a\n        >\n        \u003ca href=\"./contact-us/contact-us.html\">Contact us\u003c/a>\n      \u003c/div>\n      \u003cdiv class=\"banner-container\">\n        \u003ch1>Unlimited movies, TV shows, and more.\u003c/h1>\n        \u003ch2>Watch anywhere. Cancel anytime.\u003c/h2>\n\n        \u003c!-- Get started from-->\n        \u003cform class=\"get-started-form\">\n          \u003ch3>\n            Ready to watch? Enter your email to create or restart your\n            membership.\n          \u003c/h3>\n          \u003cinput type=\"text\" />\n          \u003cbutton>GET STARTED>\u003c/button>\n        \u003c/form>\n      \u003c/div>\n    \u003c/div>\n    \u003cdiv class=\"info-container\">\n      \u003ch1>Enjoy on your TV.\u003c/h1>\n      \u003cp class=\"sm-font\">\n        Watch on Smart TVs, \u003cstrong>Playstation\u003c/strong>, Xbox, Chromecast,\n        Apple TV, Blu-ray players, and more.\n      \u003c/p>\n      \u003c!-- Inline video-->\n      \u003cvideo autoplay playsinline muted loop>\n        \u003csource\n          src=\"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v\"\n          type=\"video/mp4\"\n        />\n      \u003c/video>\n    \u003c/div>\n    \u003c!-- This is the footer -->\n    \u003cdiv class=\"footer\">\n      \u003cul>\n        \u003cli>FAQ\u003c/li>\n        \u003cli>Help Center\u003c/li>\n        \u003cli>Account\u003c/li>\n        \u003cli>Media Center\u003c/li>\n        \u003cli>Investor Relations\u003c/li>\n        \u003cli>Jobs\u003c/li>\n        \u003cli>Ways to Watch\u003c/li>\n        \u003cli>Terms of Use\u003c/li>\n        \u003cli>Privacy\u003c/li>\n        \u003cli>Cookie Preferences\u003c/li>\n        \u003cli>Corporate Information\u003c/li>\n        \u003cli>Contact Us\u003c/li>\n        \u003cli>Speed Test\u003c/li>\n        \u003cli>Legal Notices\u003c/li>\n        \u003cli>Netflix Originals\u003c/li>\n      \u003c/ul>\n    \u003c/div>\n  \u003c/body>\n\u003c/html>\n","isBinary":false},"isEntry":true,"isTestFile":false,"sourceEqualsCompiled":false,"childModules":[],"dependencies":["/style.css:","/responsive.css:","/assets/logo.png:","/assets/favicon.png:"],"initiators":[],"transpilationDependencies":[],"transpilationInitiators":[],"asyncDependencies":[],"warnings":[],"hasMissingDependencies":false,"source":{"fileName":"/index.html","compiledCode":"\nfunction loadResources() {\n\trequire(\"./assets/favicon.png\");\n\n\trequire(\"./style.css\");\n\n\trequire(\"./responsive.css\");\n\n\trequire(\"./assets/logo.png\");\n\n}\nif (document.readyState !== 'complete') {\n  window.addEventListener('load', function() { loadResources() });\n} else {\n  loadResources();\n}\n\n","sourceEqualsCompiled":false}}},"cachedPaths":{"/":{"./style.css":"/style.css","./responsive.css":"/responsive.css","./assets/logo.png":"/assets/logo.png","./assets/favicon.png":"/assets/favicon.png"}},"version":"https://codesandbox.io/static/js/sandbox.c3f845a33.js","timestamp":1642942241392,"configurations":{"package":{"path":"/package.json","code":"{\n  \"name\": \"flex-cleaning-navbar0-55\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.html\",\n  \"scripts\": {\n    \"start\": \"parcel index.html --open\",\n    \"build\": \"parcel build index.html\"\n  },\n  \"dependencies\": {\n    \"parcel-bundler\": \"^1.6.1\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.2.0\"\n  },\n  \"resolutions\": {\n    \"@babel/preset-env\": \"7.13.8\"\n  },\n  \"keywords\": []\n}","generated":false,"parsed":{"name":"flex-cleaning-navbar0-55","version":"1.0.0","description":"","main":"index.html","scripts":{"start":"parcel index.html --open","build":"parcel build index.html"},"dependencies":{"parcel-bundler":"^1.6.1"},"devDependencies":{"@babel/core":"7.2.0"},"resolutions":{"@babel/preset-env":"7.13.8"},"keywords":[]}},"sandbox":{"path":"/sandbox.config.json","code":"{\n  \"infiniteLoopProtection\": true,\n  \"hardReloadOnChange\": false,\n  \"view\": \"browser\"\n}","generated":true,"parsed":{"infiniteLoopProtection":true,"hardReloadOnChange":false,"view":"browser"}},"now":{"path":"/vercel.json","code":"{}","generated":true,"parsed":{}},"babel":{"path":"/.babelrc","code":"{\n  \"presets\": [\n    \"env\"\n  ],\n  \"plugins\": [\n    \"transform-runtime\"\n  ],\n  \"parserOpts\": {\n    \"plugins\": [\n      \"dynamicImport\"\n    ]\n  }\n}","generated":true,"parsed":{"presets":["env"],"plugins":["transform-runtime"],"parserOpts":{"plugins":["dynamicImport"]}}},"typescript":{"path":"/tsconfig.json","code":"{\n  \"compilerOptions\": {\n    \"module\": \"commonjs\",\n    \"jsx\": \"preserve\",\n    \"esModuleInterop\": true,\n    \"sourceMap\": true,\n    \"allowJs\": true,\n    \"lib\": [\n      \"es6\",\n      \"dom\"\n    ],\n    \"rootDir\": \"src\",\n    \"moduleResolution\": \"node\"\n  }\n}","generated":true,"parsed":{"compilerOptions":{"module":"commonjs","jsx":"preserve","esModuleInterop":true,"sourceMap":true,"allowJs":true,"lib":["es6","dom"],"rootDir":"src","moduleResolution":"node"}}}},"entry":"/index.html","meta":{},"dependenciesQuery":"%40babel%2Fruntime%407.16.7+node-libs-browser%402.2.1"},
+  latestSha: "07FBCC89FE9506EB102729AA508506A16812E589EB5F3A952E2D6F3A116C6149",
+  version: "https://codesandbox.io/static/js/sandbox.c3f845a33.js"
+};
+
+</script>
+  <script crossorigin="" type="text/javascript" src="./watermark-button.be960f43b.js"></script>
+  
+
+
+</body></html>

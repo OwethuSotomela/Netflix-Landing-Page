@@ -1,0 +1,73 @@
+/* CUSTOM STYLES */
+
+/* Add here your custom styles */
+
+
+
+/* =============== */
+/* TEMPLATE STYLES */
+
+/* Variables */
+:root {
+  --dark-color: 33, 67, 200;
+}
+
+.Message[data-author="bot"] .message-left {
+  padding-bottom: 4px;
+}
+
+/* Box-shadows with main color */
+
+.Header.Header--isSticky {
+  box-shadow: 0 2px 18px 0 rgba(var(--dark-color), 0.16);
+}
+
+.custom-buttons .custom-button:hover, 
+.custom-buttons .input-button:hover, 
+.input-buttons .custom-button:hover, 
+.input-buttons .input-button:hover {
+	box-shadow: 
+		0 6px 21px -11px rgba(var(--dark-color), 0.29), 
+    0 13px 17px -16px rgba(var(--dark-color), .3);
+}
+
+[class^=Input] .input:not(:focus), 
+[class^=Input] .textarea:not(:focus) {
+	box-shadow: inset 0 0 100px 100px rgba(var(--dark-color), 0.08);
+}
+
+/* Persistent vertical hover color */
+
+.PersistentMenu.PersistentMenu--VerticalVersion .buttons .custom-button:hover {
+	color: var(--message_background_color_bot)!important;
+}
+
+/* Branding and back mobile colors */
+
+.Branding__TextItem,.Branding__Logo svg path,
+.BackButton__FooterContainer button.BackButton.custom-button .BackButton_Label,
+.BackButton__FooterContainer button.BackButton.custom-button .BackButton_Icon svg path  {
+	color: rgba(var(--dark-color),.6)!important;
+	fill: var(--base_color_button)!important;
+}
+
+@media (min-width: 768px) {
+	.BackButton.custom-button:hover, 
+	.BackButton.input-button:hover {
+		background-color: rgba(var(--dark-color), 0.12)!important;
+	}
+  #Main {
+    border: 7px solid var(--base_color_button);
+    border-radius: calc(var(--border_radius)*0.13rem);
+  }
+
+  body {
+    background-color: var(--base_color_button);
+  }
+}
+
+@media (max-width: 767px) {
+  .Footer {
+    background-color: rgba(var(--dark-color), 0.06);
+  }
+}
